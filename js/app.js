@@ -103,6 +103,38 @@ if (chatbotToggle && chatbotPanel && chatbotClose && chatbotForm && chatbotInput
     });
 }
 
+// Attraction Cards Modal Interactivity
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.attraction-cards .card');
+    const modal = document.getElementById('attraction-modal');
+    const modalImg = document.getElementById('modal-img');
+    const modalTitle = document.getElementById('modal-title');
+    const modalDesc = document.getElementById('modal-desc');
+    const modalDetails = document.getElementById('modal-details');
+    const closeModal = document.querySelector('.close-modal');
+
+    cards.forEach(card => {
+        card.querySelector('.learn-more').addEventListener('click', () => {
+            modalImg.src = card.getAttribute('data-img');
+            modalTitle.textContent = card.getAttribute('data-title');
+            modalDesc.textContent = card.getAttribute('data-desc');
+            modalDetails.textContent = card.getAttribute('data-details');
+            modal.classList.add('active');
+        });
+    });
+
+    closeModal.addEventListener('click', () => {
+        modal.classList.remove('active');
+    });
+
+    // Close modal on outside click
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('active');
+        }
+    });
+});
+
 function appendMessage(sender, text) {
     const msgDiv = document.createElement('div');
     msgDiv.className = `chatbot-message ${sender}`;

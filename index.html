@@ -31,16 +31,88 @@
             <div class="hero-content">
                 <h1>Discover Singapore's Hidden Gems</h1>
                 <p>Real-time weather updates, interactive maps, and local insights</p>
-                <button class="cta-button">Start Exploring</button>
+                <button class="cta-button" id="start-exploring-btn">Start Exploring</button>
             </div>
         </section>
 
         <section id="explore" class="features">
-            <!-- Feature sections will be added here -->
+            <h2 class="section-title">Explore Singapore Attractions</h2>
+            <div class="attraction-cards">
+                <div class="card" data-title="Universal Studios Singapore" data-img="https://cdn-imgix.headout.com/media/images/f6dbdc74dbbfe0caa8a3d567b3d344cb-7560-singapore-universal-studios-singapore-vip-experience-05.jpg" data-desc="Experience thrilling rides and shows at Southeast Asia’s first and only Universal Studios theme park." data-details="Located on Sentosa Island, Universal Studios Singapore offers themed zones, roller coasters, and live entertainment for all ages.">
+                    <img src="https://cdn-imgix.headout.com/media/images/f6dbdc74dbbfe0caa8a3d567b3d344cb-7560-singapore-universal-studios-singapore-vip-experience-05.jpg" alt="Universal Studios Singapore" />
+                    <h3>Universal Studios Singapore</h3>
+                    <p>Experience thrilling rides and shows at Southeast Asia’s first and only Universal Studios theme park.</p>
+                    <button class="learn-more">Learn More</button>
+                </div>
+                <div class="card" data-title="Singapore Zoo" data-img="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_864/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/b2vdzehcsk2t6n6mziv0/SingaporeZooTickets.jpg" data-desc="Explore one of the world’s best rainforest zoos, home to over 2,800 animals." data-details="Singapore Zoo is famous for its open concept and naturalistic habitats. Enjoy breakfast with orangutans and animal shows daily.">
+                    <img src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_864/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/b2vdzehcsk2t6n6mziv0/SingaporeZooTickets.jpg" alt="Singapore Zoo" />
+                    <h3>Singapore Zoo</h3>
+                    <p>Explore one of the world’s best rainforest zoos, home to over 2,800 animals.</p>
+                    <button class="learn-more">Learn More</button>
+                </div>
+                <div class="card" data-title="Merlion Park" data-img="https://www.trawell.in/admin/images/upload/935304121Merlion_Park_Singapore.jpg" data-desc="Visit Singapore’s iconic Merlion statue and enjoy stunning views of Marina Bay." data-details="Merlion Park is a must-visit for first-timers. Take photos with the Merlion and enjoy the cityscape, especially at sunset.">
+                    <img src="https://www.trawell.in/admin/images/upload/935304121Merlion_Park_Singapore.jpg" alt="Merlion Park" />
+                    <h3>Merlion Park</h3>
+                    <p>Visit Singapore’s iconic Merlion statue and enjoy stunning views of Marina Bay.</p>
+                    <button class="learn-more">Learn More</button>
+                </div>
+                <div class="card" data-title="Marina Bay Sands" data-img="https://wallpapercave.com/wp/wp5045784.jpg" data-desc="Discover the world-famous hotel, SkyPark, and infinity pool overlooking the city skyline." data-details="Marina Bay Sands is an architectural marvel. Visit the SkyPark Observation Deck, infinity pool, and enjoy shopping and dining experiences.">
+                    <img src="https://wallpapercave.com/wp/wp5045784.jpg" alt="Marina Bay Sands" />
+                    <h3>Marina Bay Sands</h3>
+                    <p>Discover the world-famous hotel, SkyPark, and infinity pool overlooking the city skyline.</p>
+                    <button class="learn-more">Learn More</button>
+                </div>
+            </div>
+            <!-- Modal for attraction details -->
+            <div id="attraction-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <img id="modal-img" src="" alt="" />
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-desc"></p>
+                    <p id="modal-details"></p>
+                </div>
+            </div>
+            <!-- ExploreSG Video Section -->
+            <div class="exploresg-video-section" style="margin: 1.5rem auto 0.5rem auto; max-width: 800px; text-align: center;">
+                <h2 style="margin-bottom: 0.5rem; color: #E63946;">Watch: ExploreSG Adventure Highlights</h2>
+                <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:16px; box-shadow:0 4px 24px rgba(0,0,0,0.10);">
+                    <iframe src="https://www.youtube.com/embed/wAeOFM_P7ZQ" title="ExploreSG Bot Introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                </div>
+            </div>
         </section>
 
-        <section id="weather" class="weather-section">
-            <!-- Weather widget will be added here -->
+        <section id="bot" class="bot-section">
+            <section id="bot-intro" class="bot-intro-section">
+                <div class="bot-intro-content">
+                    <h2>🤖 Meet the ExploreSG Bot!</h2>
+                    <p style="font-size:1.15em; margin-bottom:1em;">
+                        <strong>Ever wondered...</strong><br>
+                        <em>"Where can I find the coolest hidden gems in Singapore?"</em><br>
+                        <em>"What’s happening this weekend?"</em><br>
+                        <em>"Is it a good day for an outdoor adventure?"</em><br>
+                        <em>"How do I plan the perfect day out?"</em>
+                    </p>
+                    <p style="margin-bottom:1em;">
+                        The <strong>ExploreSG Bot</strong> is your friendly AI guide, ready to answer all these questions and more! Just click <span style="color:#E63946;font-weight:bold;">Start Exploring</span> to chat and get instant tips, recommendations, and travel inspiration.
+                    </p>
+                    <div style="margin-bottom:1em;">
+                        <ul style="margin-left:2em;">
+                            <li>✨ Discover must-see attractions and local secrets</li>
+                            <li>🎉 Get real-time event and activity suggestions</li>
+                            <li>🌦️ Check the weather before you head out</li>
+                            <li>🗺️ Plan your adventure with interactive help</li>
+                        </ul>
+                    </div>
+                    <p style="font-size:1.1em; margin-bottom:1em;">
+                        <strong>Prefer chatting on Telegram?</strong><br>
+                        <a href="https://t.me/ExploreSG_Bot" target="_blank" style="color:#1D3557; font-weight:bold; text-decoration:underline;">Try ExploreSG Bot on Telegram</a>
+                    </p>
+                    <p style="font-size:1.1em;">
+                        <strong>Ready to explore?</strong> Click the red chat button at the bottom right and let the adventure begin!
+                    </p>
+                </div>
+            </section>
         </section>
 
         <section id="map" class="map-section">
@@ -169,7 +241,18 @@
                     }
                 }
             }
-        })
+        });
+        // Link Start Exploring button to open chatbot
+        window.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('start-exploring-btn');
+            if (btn) {
+                btn.addEventListener('click', () => {
+                    if (window.Chatbot && typeof window.Chatbot.open === 'function') {
+                        window.Chatbot.open();
+                    }
+                });
+            }
+        });
     </script>
 </body>
 </html>

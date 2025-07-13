@@ -76,10 +76,12 @@ body {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(29, 53, 87, 0.8), rgba(29, 53, 87, 0.8)),
-                url('../assets/singapore-skyline.jpg');
+    background:
+        linear-gradient(rgba(29, 53, 87, 0.6), rgba(29, 53, 87, 0.6)),
+        url('https://cdn-imgix.headout.com/media/images/4057a5f45bb32fbfa9cb4c83a49895f5-Gardens%20by%20the%20bay.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -177,6 +179,131 @@ section {
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Attraction Cards */
+.attraction-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    justify-items: center;
+    align-items: stretch;
+}
+.card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    min-width: 260px;
+    max-width: 340px;
+    min-height: 420px;
+    position: relative;
+}
+.card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    z-index: 2;
+}
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.card h3 {
+    margin: 1rem 0 0.5rem 0;
+    color: var(--color-primary);
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+}
+.card p {
+    color: var(--color-secondary);
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 1rem 1.5rem 1rem;
+}
+
+.learn-more {
+    margin-bottom: 1rem;
+    padding: 0.6rem 1.2rem;
+    background: var(--color-primary);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 18px;
+    pointer-events: none;
+}
+.card:hover .learn-more {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background: rgba(29,53,87,0.45);
+    justify-content: center;
+    align-items: center;
+}
+.modal.active {
+    display: flex;
+}
+.modal-content {
+    background: #fff;
+    border-radius: 18px;
+    max-width: 400px;
+    width: 90vw;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    position: relative;
+    text-align: center;
+    animation: fadeInModal 0.3s;
+}
+@keyframes fadeInModal {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+.modal-content img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+.close-modal {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 2rem;
+    color: var(--color-primary);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 2;
 }
 
 /* Chatbot Widget Styles */
