@@ -19,9 +19,8 @@
             <div class="logo">ExploreSG</div>
             <ul class="nav-menu">
                 <li><a href="#explore">Explore</a></li>
-                <li><a href="#weather">Weather</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#map">Map</a></li>
+                <li><a href="#bot">ExploreSG Bot</a></li>
+                <li><a href="#reviews">Reviews</a></li>
             </ul>
         </nav>
     </header>
@@ -74,43 +73,64 @@
                 </div>
             </div>
             <!-- ExploreSG Video Section -->
-            <div class="exploresg-video-section" style="margin: 1.5rem auto 0.5rem auto; max-width: 800px; text-align: center;">
-                <h2 style="margin-bottom: 0.5rem; color: #E63946;">Watch: ExploreSG Adventure Highlights</h2>
-                <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:16px; box-shadow:0 4px 24px rgba(0,0,0,0.10);">
-                    <iframe src="https://www.youtube.com/embed/wAeOFM_P7ZQ" title="ExploreSG Bot Introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-                </div>
-            </div>
         </section>
 
         <section id="bot" class="bot-section">
-            <section id="bot-intro" class="bot-intro-section">
-                <div class="bot-intro-content">
-                    <h2>🤖 Meet the ExploreSG Bot!</h2>
+            <div class="bot-ad-section" style="max-width:800px; margin:0 auto 2.5rem auto; text-align:center;">
+                <h2 class="section-title" style="color:#E63946; font-size:2em; margin-bottom:1.2rem;">Meet ExploreSG Bot</h2>
+                <div class="video-wrapper" style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:16px; box-shadow:0 4px 24px rgba(0,0,0,0.10); margin-bottom: 2rem;">
+                    <iframe src="https://www.youtube.com/embed/rtRLDyL8GY0" title="ExploreSG Bot Advertisement" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                </div>
+                <div class="ad-desc" style="font-size:1.15em; color:#1D3557; margin-bottom:2rem;">See how ExploreSG Bot can help you discover, plan, and enjoy Singapore’s best experiences. Watch the video and get inspired!</div>
+                <button class="cta-button" onclick="document.getElementById('bot-intro').scrollIntoView({behavior:'smooth'});">Learn More</button>
+            </div>
+            <section id="bot-intro" class="bot-intro-section" style="transition:box-shadow 0.3s; box-shadow:0 2px 16px rgba(29,53,87,0.07); border-radius:18px; background:#fff; margin:0 auto 2.5rem auto; max-width:800px;">
+                <div class="bot-intro-content" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <h2 style="color:#457B9D; font-size:2em; margin-bottom:1.2rem;">🤖 ExploreSG Bot: Your Adventure Guide</h2>
+                    <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:16px; box-shadow:0 4px 24px rgba(0,0,0,0.10); margin-bottom: 1.5rem;">
+                        <iframe src="https://www.youtube.com/embed/wAeOFM_P7ZQ" title="ExploreSG Bot Introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                    </div>
                     <p style="font-size:1.15em; margin-bottom:1em;">
-                        <strong>Ever wondered...</strong><br>
-                        <em>"Where can I find the coolest hidden gems in Singapore?"</em><br>
-                        <em>"What’s happening this weekend?"</em><br>
-                        <em>"Is it a good day for an outdoor adventure?"</em><br>
-                        <em>"How do I plan the perfect day out?"</em>
+                        <strong>Ever wondered...</strong>
+                        <ul style="list-style: disc inside; text-align:left; display:inline-block; margin:1em auto 1em auto; font-size:1.1em;">
+                            <li>Where can I find the coolest hidden gems in Singapore?</li>
+                            <li>What’s happening this weekend?</li>
+                            <li>Is it a good day for an outdoor adventure?</li>
+                            <li>How do I plan the perfect day out?</li>
+                        </ul>
                     </p>
                     <p style="margin-bottom:1em;">
                         The <strong>ExploreSG Bot</strong> is your friendly AI guide, ready to answer all these questions and more! Just click <span style="color:#E63946;font-weight:bold;">Start Exploring</span> to chat and get instant tips, recommendations, and travel inspiration.
                     </p>
-                    <div style="margin-bottom:1em;">
-                        <ul style="margin-left:2em;">
-                            <li>✨ Discover must-see attractions and local secrets</li>
-                            <li>🎉 Get real-time event and activity suggestions</li>
-                            <li>🌦️ Check the weather before you head out</li>
-                            <li>🗺️ Plan your adventure with interactive help</li>
-                        </ul>
-                    </div>
-                    <p style="font-size:1.1em; margin-bottom:1em;">
+                    <ul style="display:inline-block; text-align:left; font-size:1.15em; margin: 0 auto 1em auto; padding-left: 1.5em;">
+                        <li><span style="font-size:1.2em;">✨</span> Discover must-see attractions and local secrets</li>
+                        <li><span style="font-size:1.2em;">🎉</span> Get real-time event and activity suggestions</li>
+                        <li><span style="font-size:1.2em;">🌦️</span> Check the weather before you head out</li>
+                        <li><span style="font-size:1.2em;">🗺️</span> Plan your adventure with interactive help</li>
+                    </ul>
+                    <p style="font-size:1.25em; margin-bottom:1em;">
                         <strong>Prefer chatting on Telegram?</strong><br>
-                        <a href="https://t.me/ExploreSG_Bot" target="_blank" style="color:#1D3557; font-weight:bold; text-decoration:underline;">Try ExploreSG Bot on Telegram</a>
+<a href="https://t.me/ExploreSG_Bot" target="_blank" style="display:inline-block; font-size:1.35em; color:#fff; background:#E63946; font-weight:bold; text-decoration:none; padding:0.5em 1.2em; border-radius:8px; margin-top:0.5em; box-shadow:0 2px 8px rgba(29,53,87,0.10);">Try ExploreSG Bot on Telegram</a>
                     </p>
-                    <p style="font-size:1.1em;">
-                        <strong>Ready to explore?</strong> Click the red chat button at the bottom right and let the adventure begin!
-                    </p>
+                    <div style="height:32px;"></div>
+                <!-- Bot Reviews Section -->
+                <div class="bot-reviews-section" style="margin:2.5rem auto 0 auto; max-width:700px; text-align:left;">
+<h3 id="reviews" style="scroll-margin-top:80px; text-align:center; color:#E63946; margin-bottom:2rem; font-size:1.5em; letter-spacing:1px;">What Users Say About ExploreSG Bot</h3>
+                    <div style="display:grid; grid-template-columns:1fr; gap:1.5rem;">
+                        <div style="background:#fff; border-left:6px solid #E63946; border-radius:12px; box-shadow:0 2px 12px rgba(29,53,87,0.08); padding:1.5rem 1.5rem 1.2rem 1.5rem;">
+                            <p style="font-size:1.15em; margin-bottom:0.5em; color:#1D3557; font-style:italic;">“Super helpful for planning my trip! The bot gave me great suggestions and even told me about local events I didn’t know about.”</p>
+                            <span style="color:#A8DADC; font-weight:700; font-size:1em; display:block; margin-top:0.5em;">— Amanda, Traveler</span>
+                        </div>
+                        <div style="background:#fff; border-left:6px solid #E63946; border-radius:12px; box-shadow:0 2px 12px rgba(29,53,87,0.08); padding:1.5rem 1.5rem 1.2rem 1.5rem;">
+                            <p style="font-size:1.15em; margin-bottom:0.5em; color:#1D3557; font-style:italic;">“Love the Telegram integration! I can get tips and weather updates on the go. Highly recommend for anyone exploring SG.”</p>
+                            <span style="color:#A8DADC; font-weight:700; font-size:1em; display:block; margin-top:0.5em;">— Wei Ming, Local Explorer</span>
+                        </div>
+                        <div style="background:#fff; border-left:6px solid #E63946; border-radius:12px; box-shadow:0 2px 12px rgba(29,53,87,0.08); padding:1.5rem 1.5rem 1.2rem 1.5rem;">
+                            <p style="font-size:1.15em; margin-bottom:0.5em; color:#1D3557; font-style:italic;">“The bot is super friendly and easy to use. It helped me find hidden gems and plan a perfect day out with friends!”</p>
+                            <span style="color:#A8DADC; font-weight:700; font-size:1em; display:block; margin-top:0.5em;">— Sarah, Student</span>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </section>
         </section>
